@@ -1,30 +1,35 @@
+/**
+ * 队列：队列是遵循FIFO（First In First Out，先进先出，也称为先来先服务）原则的一组有序的项。
+ */
 class Queue {
-    private items: Array<any>
-    public constructor(items: Array<any>) {
+    items: Array<any>
+    constructor(items: Array<any>) {
         this.items = items || []
     }
 
-    public get size() {
+    get size() {
         return this.items.length
     }
 
-    public get front() {
+    get front() {
         return this.items[0]
     }
 
-    public enqueue(item: any) {
+    enqueue(item: any) {
         this.items.push(item)
     }
 
-    public dequeue() {
+    dequeue() {
         return this.items.shift()
     }
 
-    public clear() {
+    clear() {
         this.items = []
     }
 
-    public print() {
+    print() {
         console.log(this.items.toString())
     }
 }
+
+export default Queue

@@ -1,30 +1,33 @@
+/**
+ * 栈（堆栈）：栈是一种遵从后进先出（LIFO）原则的有序集合。
+ */
 class Stack {
     private items: Array<any>
-    public constructor() {
+    constructor() {
         this.items = []
     }
 
-    public get size() {
+    get size() {
         return this.items.length
     }
 
-    public get peek() {
+    get peek() {
         return this.items[this.size - 1]
     }
 
-    public push(item: any) {
+    push(item: any) {
         this.items.push(item)
     }
 
-    public pop() {
+    pop() {
         return this.items.pop()
     }
 
-    public clear() {
+    clear() {
         this.items = []
     }
 
-    public print() {
+    print() {
         console.log(this.items.toString())
     }
 }
