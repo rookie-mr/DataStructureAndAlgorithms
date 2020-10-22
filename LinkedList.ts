@@ -3,8 +3,8 @@
 元素由一个存储元素本身的节点和一个指向下一个元素的引用（也称指针或链接）组成。
  */
 
- class LinkedList {
-     constructor() {
-         
-     }
- }
+class LinkedList {
+    constructor() {
+
+    }
+}
